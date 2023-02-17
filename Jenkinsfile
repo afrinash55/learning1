@@ -1,1 +1,10 @@
-echo "hello,this is my welcome message"
+pipeline{
+  agent any
+  stages {
+    stage('build'){
+      steps {
+        bat 'whoami'
+      }
+    }
+  }
+}
